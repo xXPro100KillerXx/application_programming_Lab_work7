@@ -1,3 +1,8 @@
+from loguru import logger
+
+logger.remove(handler_id=None)
+logger.add('laba_7.log', format='{time} {level} {message}', level='INFO', rotation='10 KB', compression='zip')
+
 k = 0
 l = 0
 m = 0
